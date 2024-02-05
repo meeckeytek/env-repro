@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+const env_var = process.env.REACT_APP_DONE;
+
 function App() {
   return (
     <div className="App">
@@ -9,6 +11,7 @@ function App() {
         <p>
           Congratulations! <br/><br/> It worked...
         </p>
+        <p>Hello {env_var}</p>
       </header>
     </div>
   );
